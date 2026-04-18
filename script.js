@@ -476,7 +476,7 @@ const socialLinks = [
     'https://facebook.com',
     'https://instagram.com',
     'https://youtube.com',
-    'https://wa.me/923411929949',
+    'https://wa.me/+923189975482',
     'https://telegram.org'
 ];
 document.querySelectorAll('.social-icons i').forEach(function (icon, idx) {
