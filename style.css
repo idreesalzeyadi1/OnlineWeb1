@@ -1,3 +1,7 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
 /* =========================================
    1. VARIABLES & RESET
    ========================================= */
@@ -53,9 +57,9 @@
 }
 
 .nav-logo-img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    width: 100px;
+    height: 75px;
+    border-radius: 10%;
     object-fit: cover;
     border: 2px solid white;
 }
@@ -161,6 +165,11 @@
 /* =========================================
    5. COURSES SECTION (Course ke Cards)
    ========================================= */
+   .urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    font-size: 20px;
+}
 .courses { padding: 50px 10%; background: #f9f9f9; }
 .course-grid { 
     display: grid; 
