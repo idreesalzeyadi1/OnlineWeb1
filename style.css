@@ -1,5 +1,5 @@
 /* =========================================
-   1. VARIABLES & RESET (Rung aur Basic Settings)
+   1. VARIABLES & RESET
    ========================================= */
 :root {
     --teal: #003d45;        /* Dark background color */
@@ -16,7 +16,7 @@
 }
 
 /* =========================================
-   2. TOP BAR (Sab se upar wali patti)
+   2. TOP BAR 
    ========================================= */
 .top-bar { 
     background: #f1f1f1; 
@@ -84,6 +84,35 @@
     margin: 4px 0 0 0;
     color: white;
 }
+.main-btn {
+    background: linear-gradient(135deg, #ff8c00, #ff5500);
+    border: none;
+    padding: 14px 35px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    display: inline-block;  /* ← block ki jagah inline-block */
+}
+
+.main-btn::before {
+    content: '📖 ';
+}
+
+.main-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(255, 140, 0, 0.7);
+    background: linear-gradient(135deg, #ff5500, #ff8c00);
+}
+
+.main-btn:active {
+    transform: translateY(1px) scale(0.98);
+}
 
 /* ── Login Button ── */
 .login-btn { 
@@ -103,23 +132,30 @@
 /* =========================================
    4. HERO SECTION (Main Banner)
    ========================================= */
-.hero { 
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x500'); 
-    height: 350px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    color: white; 
+.hero {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
 }
-.main-btn { 
-    background: var(--orange); 
-    border: none; 
-    padding: 10px 25px; 
-    color: white; 
-    border-radius: 20px; 
-    cursor: pointer; 
-    font-weight: bold; 
+
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================================
@@ -130,6 +166,10 @@
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 25px; 
+}
+.section-title {
+    text-align: center;
+    padding: 8px 10%; 
 }
 .course-card { 
     background: white; 
@@ -151,7 +191,7 @@
 }
 
 /* =========================================
-   6. JOIN OUR COMMUNITY (Updated Sections)
+   6. JOIN OUR COMMUNITY 
    ========================================= */
 .newsletter-section { 
     /* World Map Background as per image */
@@ -373,7 +413,7 @@
 }
 
 /* =========================================
-   7. MAIN FOOTER (Sab se niche wala hissa)
+   7. MAIN FOOTER 
    ========================================= */
 .main-footer {
     background-color: var(--teal);
