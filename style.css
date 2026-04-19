@@ -133,6 +133,50 @@
     opacity: 0.85;
     transition: opacity 0.2s;
 }
+
+/* PDF BUTTON */
+.pdf-btn { 
+    background: #1a6fc4;        /* blue color */
+    color: white; 
+    padding: 8px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold;
+    white-space: nowrap;
+    border: none;               /* button tag k liye */
+    cursor: pointer;
+    font-size: inherit;         /* font match kare */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pdf-btn:hover {
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+.pdf-page {
+    width: 50%;
+    min-height: 300vh;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* کارڈز کو آمنے سامنے لانے کے لیے */
+.course-grid {
+    justify-content: center;   /* کارڈز کو افقی طور پر (Horizontally) سینٹر کرے گا */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 /* =========================================
    4. HERO SECTION (Main Banner)
    ========================================= */

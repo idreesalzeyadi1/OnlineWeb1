@@ -1,7 +1,21 @@
 // ============================================
 //   Online Quran Academy — script.js
 // ============================================
+function goTo(pageId) {
+    // ویب سائٹ کے باقی حصوں کو چھپائیں
+    const mainSections = document.querySelectorAll('section, footer, .hero, .top-bar, .navbar');
+    mainSections.forEach(s => s.style.display = 'none');
 
+    // تمام پی ڈی ایف پیجز کو چھپائیں
+    document.querySelectorAll('.pdf-page').forEach(p => p.style.display = 'none');
+
+    // مطلوبہ پیج دکھائیں
+    const target = document.getElementById(pageId);
+    if (target) {
+        target.style.display = 'block';
+        window.scrollTo(0, 0);
+    }
+}
 // ─────────────────────────────────────────────
 // 1. NEWSLETTER SUBSCRIPTION
 // ─────────────────────────────────────────────

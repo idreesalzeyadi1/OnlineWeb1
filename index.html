@@ -22,18 +22,21 @@
         <img src="logo.jpeg" alt="Logo" class="nav-logo-img">
         <h2>Online Quran institute2488</h2>
     </div>
-
     <div class="icon-menu">
-        <div class="menu-item"><i class="fas fa-book-open"></i><p>Read Quran</p></div>
-        <div class="menu-item"><i class="fas fa-microphone"></i><p>Tajweed</p></div>
-        <div class="menu-item"><i class="fas fa-book-open"></i><p>Hifz Quran</p></div>
-        <div class="menu-item"><i class="fas fa-hands-praying"></i><p>Masnoon Duas</p></div>
-        <div class="menu-item"><i class="fas fa-brain"></i><p>Understand</p></div>
-        <div class="menu-item"><i class="fas fa-user-graduate"></i><p>Training</p></div>
+      <div class="menu-item"><i class="fas fa-book-open"></i><p>Read Quran</p></div>
+      <div class="menu-item"><i class="fas fa-microphone"></i><p>Tajweed</p></div>
+      <div class="menu-item"><i class="fas fa-quran"></i><p>Hifz Quran</p></div>
+      <div class="menu-item"><i class="fas fa-hands-praying"></i><p>Masnoon Duas</p></div>
+      <div class="menu-item"><i class="fas fa-brain"></i><p>Understand</p></div>
+      <div class="menu-item"><i class="fas fa-user-graduate"></i><p>Training</p></div>
     </div>
-
-    <a href="#" class="login-btn">Login</a>
-</nav>
+    <div class="nav-btns">
+      <a href="#" class="login-btn">Login</a>
+     <button class="pdf-btn" onclick="goTo('page-pdf-list')">
+    <i class="fas fa-file-pdf"></i> QURAN (PDF)
+</button>
+    </div>
+  </nav>
 
    <section class="hero">
     <img src="pHero.png" alt="Hero Image" class="hero-bg-img">
@@ -51,7 +54,7 @@ ONLINE QURAN CLASSES AROUND THE WORLD</h2>
     <div class="course-grid">
         <div class="course-card">
             <div class="card-img">
-                <img src="pic 23.jpg" alt="Read Al-Qur’an">
+                <img src="image.png" alt="Read Al-Qur’an">
             </div>
             <div class="card-content">
                  <p class="urdu-text">نورانی قاعدہ</p>
@@ -72,7 +75,7 @@ ONLINE QURAN CLASSES AROUND THE WORLD</h2>
 
         <div class="course-card">
             <div class="card-img">
-                <img src="pic 22.png" alt="Understand Al-Qur’an">
+                <img src="pic12.png" alt="Understand Al-Qur’an">
             </div>
             <div class="card-content">
                <p class="urdu-text">حفظ قرآن</p>
@@ -83,7 +86,7 @@ ONLINE QURAN CLASSES AROUND THE WORLD</h2>
     <div class="course-grid">
         <div class="course-card">
             <div class="card-img">
-                <img src="pic 23.jpg" alt="course1">
+                <img src="pic123.png" alt="course1">
             </div>
             <div class="card-content">
                 <p class="urdu-text">ترجمہ، تفسیر</p>
@@ -93,7 +96,7 @@ ONLINE QURAN CLASSES AROUND THE WORLD</h2>
 
         <div class="course-card">
             <div class="card-img">
-                <img src="pic 25.jpg" alt="Learn Tajweed">
+                <img src="pic1234.png" alt="Learn Tajweed">
             </div>
             <div class="card-content">
                 <p class="urdu-text">مسنون دعائیں</p>
@@ -228,6 +231,52 @@ ONLINE QURAN CLASSES AROUND THE WORLD</h2>
         </div>
         <a href="#" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
     </footer>
-     <script src="script.js?v=3"></script> 
+
+    <div class="pdf-page" id="page-pdf-list" style="display: none;">
+        <div class="container" style="text-align: center; padding: 50px 20px;">
+            
+            <button class="pdf-back-btn" onclick="window.location.reload()" style="margin-bottom: 30px; padding: 10px 20px; cursor: pointer; border-radius: 5px; border: 1px solid #ccc; background: #eee;">
+                <i class="fas fa-arrow-left"></i>Go to Home
+            </button>
+
+            <h1 class="section-title">Quran Kareem (PDF)</h1>
+            
+            <div class="course-grid" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin-top: 40px;">
+                
+                <div class="course-card" style="border: 2px solid #f39c12; border-radius: 20px; overflow: hidden; width: 300px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="card-img">
+                        <img src="pic 23.jpg" alt="Quran 15 Line" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-content" style="padding: 20px; text-align: center;">
+                        <p class="urdu-text" style="font-size: 24px; margin-bottom: 15px; color: #333;">قرآن مجید (15 لائن)</p>
+                        
+                        <a href="https://drive.google.com/uc?export=download&id=16BJMUD-LGNRlcAO6BiwOOuq8s-QbxcFK" download="Quran_File.pdf">
+                            <button class="pdf-download-btn" style="background-color: #f39c12; color: white; border: none; padding: 12px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%;">
+                                Download Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card" style="border: 2px solid #f39c12; border-radius: 20px; overflow: hidden; width: 300px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="card-img">
+                        <img src="pic 25.jpg" alt="Quran 16 Line" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-content" style="padding: 20px; text-align: center;">
+                        <p class="urdu-text" style="font-size: 24px; margin-bottom: 15px; color: #333;">اسان ترجمہ قرآن</p>
+                        
+                        <a href="https://drive.google.com/uc?export=download&id=1z-dZckQk-jGwTsfasEqhSpT9uINEyHy2" download="Quran_Pak.pdf">
+                            <button class="pdf-download-btn" style="background-color: #f39c12; color: white; border: none; padding: 12px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%;">
+                                Download Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script> 
 </body>
 </html>
